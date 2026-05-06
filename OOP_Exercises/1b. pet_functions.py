@@ -33,3 +33,23 @@ print(age)
 #2. Ask the user for a credit card number and let them know if it is valid
 #3. If the credit card is valid then reduce balance by $39
 #4. Write and test a function to vaccinate Bonnie 
+
+def help():
+  print('Welcome to the Pet Data Management System')
+  print("Every vet's best friend")
+
+def increase_age():
+  global age
+  age = age + 1
+
+
+def verify_ccard(card_num):
+  if len(card_num) == 19:
+    if len(card_num.splitt()) == 4:
+      return True
+  return False
+
+
+help()
+increase_age()
+print()
