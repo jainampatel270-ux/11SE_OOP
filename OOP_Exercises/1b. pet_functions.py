@@ -56,7 +56,7 @@ else:
 user_ccard = input('Enter a credit card number:')
 if verify_credit_card(user_ccard) == True:
   print('VALID')
-  account_balance = account_balance - 39
+  account_balance -= 39
   print(account_balance)
 
 else: 
