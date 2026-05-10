@@ -37,9 +37,36 @@ print(age)
 #1. Verify this number 1234 4334 1001 0000
 new_ccard = '1234 4334 1001 0000'
 if verify_credit_card(new_ccard) == True: 
+  print('Card number is VALID')
+else:
+  print('Card number is INVALID')
+
+
+
+#2. Ask the user for a credit card number and let them know if it is valid
+user_ccard = input('Enter a credit card number: ')
+if verify_credit_card(user_ccard) == True:
   print('VALID')
 else:
   print('INVALID')
 
-#2. Ask the user for a credit card number and let them know if it is valid
-print()
+
+
+#3. If the credit card is valid then reduce balance by $39
+user_ccard = input('Enter a credit card number:')
+if verify_credit_card(user_ccard) == True:
+  print('VALID')
+  account_balance = account_balance - 39
+  print(account_balance)
+
+else: 
+  print('INVALID')
+
+
+#4. Write and test a function to vaccinate Bonnie 
+def vaccination():
+  global vaccinated
+  vaccinated = True
+
+vaccination()
+print(vaccinated)
