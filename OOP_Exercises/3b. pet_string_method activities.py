@@ -10,6 +10,18 @@ class Pet:
         self.ccard = 'unknown'
         self.vaccinated = False
 
+    
+    def __str__(self):
+        payment_details = 'Your pet is unregistered'
+        if len(self.ccard) == 19:
+            payment_details = 'Registered'
+
+        my_status = 'Name: ' + self.name + '\n Category: ' + self.category + '\n Age: ' + str(self.age) + '\n Payment Details: ' + payment_details + '\n Vaccination Status: ' + str(self.vaccinated)
+        return my_status
+    
+p1 = Pet('Foxy', 'Dog', 3,)
+p1.ccard = '2348 2350 2082 0235'
+print(p1)
 
 
 #ACTIVITIES:

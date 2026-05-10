@@ -20,3 +20,25 @@ pet1 = {
 #1. Change name to Miss Bonnie
 #2. Increase age by 1
 #3. Create another pet who is a dog, fill in all the fields
+
+pet1 = {
+'name' : 'Miss Bonnie',
+'animal category' : 'Cat',
+'age' : 3,
+'vaccinated' : True,
+'credit card' : '3423 2326 7543 1234',
+'billing address' : '17 Park Drive, The Shire 3695',
+'owner name' : 'Annie Jenkins',
+'account balance' : 129.95,
+}
+
+pet1 = {
+'name' : 'Tyson',
+'animal category' : 'Lion',
+'age' : 67,
+'vaccinated' : False,
+'credit card' : '3423 2326 7543 1234',
+'billing address' : 'Colobee Drive, The Preedy 6741',
+'owner name' : 'Mr Preedy',
+'account balance' : 141.67,
+}
