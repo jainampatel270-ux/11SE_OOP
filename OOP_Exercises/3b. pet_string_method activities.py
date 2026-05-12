@@ -13,7 +13,7 @@ class Pet:
     
     def __str__(self):
         payment_details = 'Your pet is unregistered'
-        if len(self.ccard) == 19:
+        if len(self.ccard) == 16:
             payment_details = 'Registered'
 
         my_status = 'Name: ' + self.name + '\n Category: ' + self.category + '\n Age: ' + str(self.age) + '\n Payment Details: ' + payment_details + '\n Vaccination Status: ' + str(self.vaccinated)
