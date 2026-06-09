@@ -13,9 +13,40 @@ class Pet:
     
     def have_birthday(self):
         self.age += 1
+        
+    def vaccinate(self):
+        if self.vaccinated == True:
+            print(self.name, 'is already vaccinated')
+        else:
+            self.vaccinated = True
     
-    
+    def clear_balance(self):
+        if self.account_balance == 0:
+            print(str(self.ccard), 'has $', + self.account_balance, 'remaining')
+        else:
+            self.account_balance = 0
 
+    def __str__(self):
+        payment_details = 'Your pet is unregistered'
+        if len(self.ccard) == 16:
+            payment_details = 'Registered'
+
+        my_status = '\n Name: ' + self.name + '\n Category: ' + self.category + '\n Age: ' + str(self.age) + '\n Payment Details: ' + payment_details + '\n Vaccination Status: ' + str(self.vaccinated)
+        return my_status
+    
+    def human_age(self):
+        if self.category == 'Dog':
+            print(self.name, 'Human age: ', self.age*7)
+        elif self.category == 'Cat':
+            print(self.name, 'Human age: ', self.age*6)
+
+p1 = Pet('Bonnie', 'Cat', 10)
+p1.have_birthday()
+p1.vaccinate()
+p1.clear_balance()
+p1.human_age()
+
+print(p1)
 #ACTIVITIES:
 #1. Add another method to vaccinate the pet
 #2. Add another attribute for account balance then add a method to clear balance

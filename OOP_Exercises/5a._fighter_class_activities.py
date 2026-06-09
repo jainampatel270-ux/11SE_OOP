@@ -6,3 +6,10 @@
 import random
 
 class Fighter:
+    def __init__(self,name, starting_health, weapon, shield):
+        self.name = name
+        self.health = starting_health
+        self.weapon = weapon
+        self.shield = shield
+
+        
